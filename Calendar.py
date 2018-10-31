@@ -20,7 +20,7 @@ if project:
         defsfilename = project + ".defs"
         defsfile = open(defsfilename,"w")
 
-i542 = Namespace("http://courseweb.ischool.illinois.edu/is542/")
+i203 = Namespace("http://courseweb.ischool.illinois.edu/is203/")
 event = Namespace("http://purl.org/NET/c4dm/event.owl#")
 tl = Namespace("http://purl.org/NET/c4dm/timeline.owl#")
 dc = Namespace("http://purl.org/dc/terms/")
@@ -35,29 +35,29 @@ mygraph.parse(ttlfilename,format="n3")
 wlist = []  # List of weeks
 weekstart = {} # associate weeks with their starting date
 
-for s in mygraph.subjects(RDF.type, i542.TimeInterval):
+for s in mygraph.subjects(RDF.type, i203.TimeInterval):
   for i in mygraph.objects(s,event.time):
     for a in mygraph.objects(i,tl.at):
       weekstart[str(a)] = s
 
 deadlines = {}
 
-for d in mygraph.subjects(RDF.type, i542.Deadline):
+for d in mygraph.subjects(RDF.type, i203.Deadline):
                             weekdue = duedate = adue = moodleiri = moodlealias = dlabel = alabel = ""
                             for o in mygraph.objects(d,RDFS.label):
                                     dlabel = str(o)
-                            for o in mygraph.objects(d,i542.during):
+                            for o in mygraph.objects(d,i203.during):
                                     weekdue = o
-                            for o in mygraph.objects(d,i542.date):
+                            for o in mygraph.objects(d,i203.date):
                                     duedate = str(o)
-                            for o in mygraph.objects(d,i542.moodleIRI):
+                            for o in mygraph.objects(d,i203.moodleIRI):
                                     moodleiri = str(o)
-                            for o in mygraph.objects(d,i542.moodleAlias):
+                            for o in mygraph.objects(d,i203.moodleAlias):
                                     moodlealias = str(o)
-                            for a in mygraph.subjects(i542.hasDeadline,d):
+                            for a in mygraph.subjects(i203.hasDeadline,d):
                                     for o in mygraph.objects(a,RDFS.label):
                                             alabel = str(o)
-                                    for o in mygraph.objects(a,i542.dueDate):
+                                    for o in mygraph.objects(a,i203.dueDate):
                                             adue = str(o)
                             if (weekdue in deadlines.keys()):
                                     deadlines[weekdue] += "- **" + duedate + ":** " + dlabel + ", " + alabel + "\n"
@@ -75,7 +75,7 @@ for d in wlist:
   myweek = myconcept = required = weekdate = background  = ''
   for o in mygraph.objects(weekstart[d], RDFS.label):
     myweek = str(o)
-  for o in mygraph.objects(weekstart[d], i542.date):
+  for o in mygraph.objects(weekstart[d], i203.date):
     weekdate = str(o)
   if weekdate:    
     cldrfile.write("\n")
@@ -86,9 +86,9 @@ for d in wlist:
     for s in mygraph.objects(weekstart[d],dc.subject):
       for p in mygraph.objects(s,skos.prefLabel):
         myconcept = str(p)
-        for q in mygraph.objects(s,i542.backgroundReading):
+        for q in mygraph.objects(s,i203.backgroundReading):
           background = str(q)
-        for r in mygraph.objects(s,i542.reqReading):
+        for r in mygraph.objects(s,i203.reqReading):
           required = str(r)
       cldrfile.write("#### Topic: " + myconcept + "\n\n")  
       rstring = "- **Required Readings:** "

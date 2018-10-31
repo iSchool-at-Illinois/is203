@@ -1,4 +1,4 @@
-@prefix : <http://courseweb.ischool.illinois.edu/is542/> .
+@prefix : <http://courseweb.ischool.illinois.edu/is203/> .
 @prefix hwk: <https://courses.ischool.illinois.edu/mod/assign/> .
 @prefix z: <http://www.zotero.org/namespaces/export#> .
 @prefix ad: <http://schemas.talis.com/2005/address/schema#> .
