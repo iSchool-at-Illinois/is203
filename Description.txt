@@ -1,0 +1,68 @@
+203 Analytical Foundations for Information Problems
+
+Topics
+
+• Sets and Relations as models of application domains
+• Problems of combinations and arrangements
+• Probability and the probabilistic view of information
+• Distributions as models of data and events
+• Graphs and trees as domain models
+• Strings, codes, errors, and privacy
+• Facts and rules in the propositional and predicate calculi
+
+Prerequisite: MTH 124: Finite Mathematics
+
+Textbooks
+
+• Wallis, W. D. (2013). Mathematics in the real world. Birkhäuser.
+• van Benthem, J., van Ditmarsch, H., van Eijck, J., & Jaspars, J. (2014). Logic in Action. Amsterdam, NL: Logic in Action Open Course Project.
+
+
+
+IS203: Analytical Foundations for Information Problems
+
+Course Description
+
+A survey of mathematical topics for students in information
+sciences. Provides an introduction to sets, relations, graphs,
+grammars, probability, and propositional and predicate logic. These
+topics relate to applications in information modeling, representation
+and expression.
+
+Credit Hours
+
+3 credit hours
+
+Prerequisites
+• MATH 124: Finite Mathematics
+
+Course Objectives
+
+Upon successful completion of the course, students will:
+
+• be able to apply fundamental mathematical tools for solving problems
+  of information modeling and expression.
+
+• be prepared for further core and elective undergraduate coursework in information sciences.
+
+Required Readings
+
+Wallis, W. D. (2013). Mathematics in the real world. Birkhäuser.
+
+van Benthem, J., van Ditmarsch, H., van Eijck, J., & Jaspars,
+J. (2014). Logic in Action. Amsterdam, NL: Logic in Action Open Course
+Project.
+
+Assessment
+• Homework: 12 problem sets (36%)
+• Seven quizzes completed in class (49%)
+• Final exam (15%)
+
+Topics
+• Sets and relations as models of application domains
+• Problems of combinations and arrangements
+• Probability and the probabilistic view of information
+• Distributions as models of data and events
+• Graphs and trees as domain models
+• Strings, codes, errors, and privacy
+• Facts and rules in the propositional and predicate calculi
