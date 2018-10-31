@@ -1,5 +1,13 @@
 # Assignments and Evaluation
 
+
+- Homework: 12 problem sets (36%)
+- Seven quizzes completed in class (49%)
+- Final exam (15%)
+
+
+
+
 > *This section should detail the grading policy (what constitutes an
 > A, B, C, etc.) and also delineate the differences among variable
 > credit assignments. Brief descriptions of assignments can be

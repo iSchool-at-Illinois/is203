@@ -1,10 +1,12 @@
 # Course Materials
 
-> *The required textbook for this course is described here, along with
-> other course materials students should know about. Give complete
-> information for required and/or recommended texts including ISBN and
-> edition number if applicable. Also indicate if readings will be
-> posted online and/or on reserve.*
+
+Textbooks
+
+- Wallis, W. D. (2013). Mathematics in the real world. Birkhäuser.
+- van Benthem, J., van Ditmarsch, H., van Eijck, J., & Jaspars, J. (2014). Logic in Action. Amsterdam, NL: Logic in Action Open Course Project.
+
+
 
 
 
