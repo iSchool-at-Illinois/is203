@@ -1,0 +1,32 @@
+IS??7 Mathematical Foundations of Data Analysis
+
+Topics
+
+• Matrix and vector representation of multivariate data
+• Operations on matrices
+• Determinants of matrices
+• Geometric representation of vectors
+• Linear dependence
+• Linear transformations
+• Matrix inversion
+• Transformation of covariance matrices
+• Matrix eigenstructures
+• Quadratic forms
+• Symbolic differentiation
+• Optimization of multivariable functions
+• Applications: linear models and multiple regression
+• Applications: principal components analysis
+• Applications: discriminant analysis
+
+Textbooks
+
+• Carroll, J.D. and Green, P.E. Mathematical tools for applied multivariate analysis. Academic Press.
+
+Course Description
+
+An introduction to topics and techniques in transformational geometry,
+linear algebra, and calculus most relevant for the study of
+multivariate analysis, and demonstrates their roles as bases for solving
+data analytic problems.
+
+

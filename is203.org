@@ -15,4 +15,175 @@
 *** TODO Assignments file
 *** TODO Deadlines file
 
-** GenEd Requirements
+** GenEd Requirements (written for a student audience)
+*** TODO Course rubric, number, title, and number of credits (if differential credit, also indicate)
+*** TODO The Instructor's name, office location, and contact information
+*** TODO A brief description of the course, ideally one that expands on the catalog description
+*** TODO Notation of any pre-requisites, as well as requirements course meets (Gen Ed, major/minor requirement, other)
+*** TODO Notation of frequency and duration of class meetings (e.g., MWF 10:00-10:50 AM, TR 8:00-9:15 AM)
+
+See http://provost.illinois.edu/policies/policies/courses/proposing-new-courses
+as well as the LAS Course Proposal Form for more information on the
+relationship between Credit Hours and Contact Hours
+*** TODO A list of required and, if applicable, recommended course texts 
+
+with complete information such as author(s), publisher, date of
+publication, plus where to obtain texts (including any found online)
+*** TODO A list of 3 or more Student Learning Outcomes (SLOs). 
+
+For Gen Ed courses, consider keying to the specific Gen Ed
+requirement; for courses in the major, to major program goals. For
+more information about SLOs, see
+https://provost.illinois.edu/assessment/learning-outcomes-assessment/what-is-learning-outcomes-assessment/#categories).
+*** TODO A Course Calendar that includes course topics, daily readings and assignments, and due dates
+*** TODO Course grading policies and breakdown of final grade 
+(e.g., Papers 40%, Exams 40%, Group Presentation 20%); a brief
+description of major assignments is also helpful to include
+*** TODO A course attendance policy, including instructor’s policies on late work, makeup exams, etc.
+
+- See http://admin.illinois.edu/policy/code/article1_part5_1-501.html
+
+*** TODO A statement on Academic Integrity
+
+- Example: According to the Student Code, `It is the responsibility of each student to refrain 
+  from infractions of academic integrity, from conduct that may lead
+  to suspicion of such infractions, and from conduct that aids others
+  in such infractions.’ Please know that it is my responsibility as an
+  instructor to uphold the academic integrity policy of the
+  University, which can be found here:
+  http://studentcode.illinois.edu/article1_part4_1-401.html
+*** TODO A statement for students who need disability accommodations 
+
+(e.g., "To ensure that disability-related concerns are properly
+addressed from the beginning, students with disabilities who require
+assistance to participate in this class are asked to see me as soon as
+possible.")
+
+** Quantitative Reasoning Requirements
+
+*** Quantitative Reasoning I
+
+Respond to the appropriate section below.
+
+If the course is a mathematics course:
+
+1. Show that the course is a either a calculus course, or a
+   mathematics course for which calculus is a prerequisite, or a
+   college-level mathematics course emphasizing logical thought
+   processes as opposed to memorization or manipulation of
+   mathematical formulas.
+
+2. How does the course teach clear organization and exposition of
+   mathematical thought?
+
+If the course is a computer science course:
+
+1. Show that the course involves problem formulation, algorithm
+   development, and a significant amount of coding of programs.
+
+2. What field of computer applications is addressed in the course?
+
+If the course is a course in symbolic logic:
+
+1. How does the course emphasize the algebra of symbolic and
+   scientific reasoning, and introduce the techniques of formal
+   logics, including truth-fundamental logic and quantification
+   theory, methods for the valuation of scientific evidence, and the
+   use of scientific information in decision making?
+
+2. How does the course teach the student the translation of verbal
+   arguments into their symbolic counterparts, the manipulation of
+   symbols, and the translation of word problems into their symbolic
+   representations?
+
+If the course is a probability or statistics course:
+
+1. How does the course emphasize the relationships between the
+   assumptions of the probabilistic and statistical models discussed
+   and the conclusions drawn?
+
+2. What strategy is employed to assure that students will understand
+   when particular models are appropriate or inappropriate?
+
+
+*** Quantitative Reasoning II
+
+The Quantitative Reasoning II requirement can be met by completing:
+(1) a second course approved for Quantitative Reasoning I credit; (2)
+a course in mathematics, statistics, computer science or symbolic
+logic that builds upon and expands a prerequisite course taken to meet
+the Quantitative Reasoning I requirement; or (3) a course in any
+department at the 100, 200 or 300-level in which at least 25 percent
+of the course material and graded material require the use of
+mathematics, computer science, probability and statistics, or symbolic
+logic consistent with Quantitative Reasoning I guidelines.
+
+If the course incorporates mathematics:
+
+If the course incorporates mathematics show how at least 25 percent of
+the course content and graded material incorporates either calculus,
+or mathematics for which calculus is a prerequisite, or college-level
+mathematics emphasizing logical thought processes as opposed to
+memorization or manipulation of mathematical formulas.
+
+If the course incorporates computer science:
+
+Show how at least 25 percent of the course content and graded material
+incorporates problem formulation, algorithm development, and a
+significant amount of coding of programs.
+
+
+If the course incorporates symbolic logic:
+
+Show how at least 25 percent of the course content and graded material
+incorporates the algebra of symbolic and scientific reasoning, and
+introduce the techniques of formal logics, including truth-fundamental
+logic and quantification theory, methods for the valuation of
+scientific evidence, and the use of scientific information in decision
+making?
+
+
+If the course incorporates probability or statistics:
+
+Show how at least 25 percent of the course content and graded material
+incorporates the relationships between the assumptions of the
+probabilistic and statistical models discussed and the conclusions
+drawn?
+
+** Guidelines for proposing new courses
+
+http://provost.illinois.edu/policies/policies/courses/proposing-new-courses/#sthash.PnBCHNhB.dpbs
+
+http://provost.illinois.edu/policies/policies/guidelines-for-general-education-courses/#sthash.B7hgHzSs.dpbs
+
+** Placeholder schedule: Fall 2019, TuThus
+
+TR 2:30-3:50 PM
+
+
+Fall Semester 2018
+Instruction Begins
+
+Monday, August 27
+Labor Day
+
+Monday, September 3 (no classes)
+ThanksgivingVacation  Begins
+
+Saturday, November 17, 1 p.m.
+Instruction Resumes
+
+Monday, November 26, 7 a.m.
+Instruction Ends
+
+Wednesday, December 12
+Reading Day
+
+Thursday, December 13
+Final Examinations Begin
+
+Friday, December 14
+Final Examinations to be conducted on
+
+Saturday, December 15
+Final Examinations End	Thursday, December 20
