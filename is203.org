@@ -11,7 +11,7 @@
 *** TODO More detail on the assignments: integrate with boilerplate text, remove short assignment file
 *** DONE Topics file
     CLOSED: [2018-10-30 Tue 21:03]
-*** TODO Calendar file
+*** DONE Calendar file
 *** TODO Assignments file
 *** TODO Deadlines file
 
