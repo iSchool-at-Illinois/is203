@@ -1,0 +1,101 @@
+:HDsets a :Deadline ;
+  rdfs:label "assignment due"@en ;
+  :date "SETSDUE" ;
+  :during :Week4 .
+
+:HDlogic0 a :Deadline ;
+  rdfs:label "assignment due"@en ;
+  :date "LOGIC0DUE" ;
+  :during :Week4 .
+
+:HDrelations a :Deadline ;
+  rdfs:label "assignment due"@en ;
+  :date "RELATIONSDUE" ;
+  :during :Week4 .
+
+:HDlogic1 a :Deadline ;
+  rdfs:label "assignment due"@en ;
+  :date "LOGIC1DUE" ;
+  :during :Week4 .
+
+:HDcounting a :Deadline ;
+  rdfs:label "assignment due"@en ;
+  :date "COUNTINGDUE" ;
+  :during :Week4 .
+
+:HDprob a :Deadline ;
+  rdfs:label "assignment due"@en ;
+  :date "PROBDUE" ;
+  :during :Week4 .
+
+:HDdist a :Deadline ;
+  rdfs:label "assignment due"@en ;
+  :date "DISTDUE" ;
+  :during :Week4 .
+
+:HDgraph1 a :Deadline ;
+  rdfs:label "assignment due"@en ;
+  :date "GRAPH1DUE" ;
+  :during :Week4 .
+
+:HDgraph2 a :Deadline ;
+  rdfs:label "assignment due"@en ;
+  :date "GRAPH2DUE" ;
+  :during :Week4 .
+
+:HDmatrix a :Deadline ;
+  rdfs:label "assignment due"@en ;
+  :date "MATRIXDUE" ;
+  :during :Week4 .
+
+:HDcode1 a :Deadline ;
+  rdfs:label "assignment due"@en ;
+  :date "CODE1DUE" ;
+  :during :Week4 .
+
+:HDcode2 a :Deadline ;
+  rdfs:label "assignment due"@en ;
+  :date "CODE2DUE" ;
+  :during :Week4 .
+
+:Q1D1 a :Deadline ;
+  rdfs:label "in class"@en ;
+  :date "Q1DATE" ;
+  :during :Week4 .
+
+:Q2D1 a :Deadline ;
+  rdfs:label "in class"@en ;
+  :date "Q2DATE" ;
+  :during :Week4 .
+
+:Q3D1 a :Deadline ;
+  rdfs:label "in class"@en ;
+  :date "Q3DATE" ;
+  :during :Week4 .
+
+:Q4D1 a :Deadline ;
+  rdfs:label "in class"@en ;
+  :date "Q4DATE" ;
+  :during :Week4 .
+
+:Q5D1 a :Deadline ;
+  rdfs:label "in class"@en ;
+  :date "Q5DATE" ;
+  :during :Week4 .
+
+:Q6D1 a :Deadline ;
+  rdfs:label "in class"@en ;
+  :date "Q6DATE" ;
+  :during :Week4 .
+
+:Q7D1 a :Deadline ;
+  rdfs:label "in class"@en ;
+  :date "Q7DATE" ;
+  :during :Week4 .
+
+:FXD1 a :Deadline ;
+  rdfs:label "in class"@en ;
+  :date "FINALEXAMDATE" ;
+  :during :Week4 .
+
+

@@ -1,3 +1,9 @@
+:Math a skos:Concept ;
+  skos:inScheme :IS203concepts ;
+  :reqReading "INTROREQREADING" ;
+  :backgroundReading "INTROBACKGREADING" ;    
+  skos:prefLabel "Mathematics, information, and systems"@en .
+
 :Sets a skos:Concept ;
   skos:inScheme :IS203concepts ;
   :reqReading "SETSREQREADING" ;
@@ -8,7 +14,7 @@
   skos:inScheme :IS203concepts ;
   :reqReading "RELATIONREQREADING" ;
   :backgroundReading "RELATIONBACKGREADING" ;    
-  skos:prefLabel "Relational models"@en .
+  skos:prefLabel "Relations and relational models"@en .
 
 :Counting a skos:Concept ;
   skos:inScheme :IS203concepts ;
@@ -68,7 +74,7 @@
   skos:inScheme :IS203concepts ;
   :reqReading "CODE3REQREADING" ;
   :backgroundReading "CODE3BACKGREADING" ;    
-  skos:prefLabel "Cyphers and privacy"@en .
+  skos:prefLabel "Number theory and privacy"@en .
 
 :Logic0 a skos:Concept ;
   skos:inScheme :IS203concepts ;

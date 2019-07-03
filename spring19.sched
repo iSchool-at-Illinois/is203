@@ -1,0 +1,18 @@
+:Week1 dcterms:subject :Math .
+:Week2 dcterms:subject :Sets .
+:Week3 dcterms:subject :Logic0 .
+:Week4 dcterms:subject :Relations .
+:Week5 dcterms:subject :Logic1 .
+:Week6 dcterms:subject :Counting .
+:Week7 dcterms:subject :Probability .
+:Week8 dcterms:subject :Distributions .
+:Week9 dcterms:subject :Graphs1 .
+:Week10 dcterms:subject :Graphs2 .
+:Week11 dcterms:subject :Graphs3 .
+:Week12 dcterms:subject :Matrices .
+:Week13 dcterms:subject :Coding1 .
+:Week14 dcterms:subject :Coding2 .
+:Week15 dcterms:subject :Coding3 .
+:Week16 dcterms:subject :Wrapup .
+
+
