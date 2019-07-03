@@ -40,6 +40,8 @@ for s in mygraph.subjects(RDF.type, i203.TimeInterval):
     for a in mygraph.objects(i,tl.at):
       weekstart[str(a)] = s
 
+
+
 deadlines = {}
 
 for d in mygraph.subjects(RDF.type, i203.Deadline):
@@ -65,7 +67,10 @@ for d in mygraph.subjects(RDF.type, i203.Deadline):
                                     deadlines[weekdue] = "- **" + duedate + ":** " + dlabel + ", " + alabel + "\n"
                             newdefs[adue] = duedate
                             newdefs[moodlealias] = moodleiri                            
-                            
+
+
+
+
 cldrfile.write("# Topic Schedule\n")
 
 wlist = list(weekstart.keys())
