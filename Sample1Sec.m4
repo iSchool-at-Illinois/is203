@@ -1,4 +1,4 @@
-define(MYSECDATA, SectionData.md)dnl
+gdefine(MYSECDATA, SectionData.md)dnl
 define(COURSETITLE, Course Title)dnl
 define(ASSIGNMENTS, Assignments.md)dnl
 define(CALENDAR, SemesterCalendar.md)dnl

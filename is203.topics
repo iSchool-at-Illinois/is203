@@ -88,4 +88,8 @@
   :backgroundReading "LOGIC1BACKGREADING" ;    
   skos:prefLabel "First order logic"@en .
 
+:Wrapup a skos:Concept ;
+  skos:inScheme :IS203concepts ;
+  skos:prefLabel "Semester Wrapup"@en .
+
 
