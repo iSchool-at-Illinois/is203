@@ -77,8 +77,6 @@ for d in wlist:
   myweek = myconcept = required = weekdate = background  = ''
   for o in mygraph.objects(weekstart[d], RDFS.label):
     myweek = str(o)
-    print(d)
-    print(weekstart[d])
   for o in mygraph.objects(weekstart[d], i203.date):
     weekdate = str(o)
   if weekdate:    

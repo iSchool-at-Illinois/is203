@@ -107,5 +107,3 @@
       tl:duration "P7D"^^xsd:duration] ;
   rdfs:label "Week 17"@en .
 
-
-

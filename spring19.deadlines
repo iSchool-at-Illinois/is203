@@ -1,120 +1,100 @@
 :HDsets a :Deadline ;
   rdfs:label "assignment due"@en ;
-  :dueDate "SETSDUE" ;
   :date "January 29" ;
   :during :Week3 .
 
 :HDlogic0 a :Deadline ;
   rdfs:label "assignment due"@en ;
-  :dueDate "LOGIC0DUE" ;
   :date "February 5" ;  
   :during :Week4 .
 
 :HDrelations a :Deadline ;
   rdfs:label "assignment due"@en ;
-  :dueDate "RELATIONSDUE" ;
   :date "February 12" ;  
   :during :Week5 .
 
 :HDlogic1 a :Deadline ;
   rdfs:label "assignment due"@en ;
-  :dueDate "LOGIC1DUE" ;
   :date "February 19" ;  
   :during :Week6 .
 
 :HDcounting a :Deadline ;
   rdfs:label "assignment due"@en ;
-  :dueDate "COUNTINGDUE" ;
   :date "February 26" ;  
   :during :Week7 .
 
 :HDprob a :Deadline ;
   rdfs:label "assignment due"@en ;
-  :dueDate "PROBDUE" ;
   :date "March 5" ;  
   :during :Week8 .
 
 :HDdist a :Deadline ;
   rdfs:label "assignment due"@en ;
-  :dueDate "DISTDUE" ;
   :date "March 12" ;  
   :during :Week9 .
 
 :HDgraph1 a :Deadline ;
   rdfs:label "assignment due"@en ;
-  :dueDate "GRAPH1DUE" ;
   :date "April 2" ;  
   :during :Week12 .
 
 :HDgraph2 a :Deadline ;
   rdfs:label "assignment due"@en ;
-  :dueDate "GRAPH2DUE" ;
   :date "April 9" ;    
   :during :Week13 .
 
 :HDmatrix a :Deadline ;
   rdfs:label "assignment due"@en ;
-  :dueDate "MATRIXDUE" ;
   :date "April 16" ;    
   :during :Week14 .
 
 :HDcode1 a :Deadline ;
   rdfs:label "assignment due"@en ;
-  :dueDate "CODE1DUE" ;
   :date "April 23" ;    
   :during :Week15 .
 
 :HDcode2 a :Deadline ;
   rdfs:label "assignment due"@en ;
-  :dueDate "CODE2DUE" ;
   :date "April 30" ;    
   :during :Week16 .
 
 :Q1D1 a :Deadline ;
   rdfs:label "in class"@en ;
-  :dueDate "Q1DATE" ;
   :date "January 31" ;    
   :during :Week3 .
 
 :Q2D1 a :Deadline ;
   rdfs:label "in class"@en ;
-  :dueDate "Q2DATE" ;
   :date "February 14" ;    
   :during :Week5 .
 
 :Q3D1 a :Deadline ;
   rdfs:label "in class"@en ;
-  :dueDate "Q3DATE" ;
   :date "February 28" ;    
   :during :Week7 .
 
 :Q4D1 a :Deadline ;
   rdfs:label "in class"@en ;
-  :dueDate "Q4DATE" ;
   :date "March 14" ;    
   :during :Week9 .
 
 :Q5D1 a :Deadline ;
   rdfs:label "in class"@en ;
-  :dueDate "Q5DATE" ;
   :date "March 28" ;    
   :during :Week11 .
 
 :Q6D1 a :Deadline ;
   rdfs:label "in class"@en ;
-  :dueDate "Q6DATE" ;
   :date "April 11" ;    
   :during :Week13 .
 
 :Q7D1 a :Deadline ;
   rdfs:label "in class"@en ;
-  :dueDate "Q7DATE" ;
   :date "April 25" ;    
   :during :Week15 .
 
 :FXD1 a :Deadline ;
   rdfs:label "in class"@en ;
-  :dueDate "FINALEXAMDATE" ;
   :date "date to be announced" ;    
   :during :Week17 .
 
