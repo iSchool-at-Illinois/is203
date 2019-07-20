@@ -12,7 +12,7 @@
 :Week12 :date "April 2 and 4";      dcterms:subject :Graphs3 .
 :Week13 :date "April 9 and 11";     dcterms:subject :Matrices .
 :Week14 :date "April 16 and 18";    dcterms:subject :Coding1 .
-:Week15 :date "April 23 and 25";    dcterms:subject :Coding2 .
+:Week15 :date "April 23 and 25";    dcterms:subject :Coding3 .
 :Week16 :date "April 30";           dcterms:subject :Wrapup .
 :Week17 :date "Finals week" .
 

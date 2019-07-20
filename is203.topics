@@ -1,91 +1,76 @@
 :Math a skos:Concept ;
   skos:inScheme :IS203concepts ;
   :reqReading "INTROREQREADING" ;
-  :backgroundReading "INTROBACKGREADING" ;    
   skos:prefLabel "Mathematics, information, and systems"@en .
 
 :Sets a skos:Concept ;
   skos:inScheme :IS203concepts ;
   :reqReading "SETSREQREADING" ;
-  :backgroundReading "SETSBACKGREADING" ;    
   skos:prefLabel "Sets"@en .
 
 :Relations a skos:Concept ;
   skos:inScheme :IS203concepts ;
   :reqReading "RELATIONREQREADING" ;
-  :backgroundReading "RELATIONBACKGREADING" ;    
   skos:prefLabel "Relations and relational models"@en .
 
 :Counting a skos:Concept ;
   skos:inScheme :IS203concepts ;
   :reqReading "COUNTINGREQREADING" ;
-  :backgroundReading "COUNTINGBACKGREADING" ;    
   skos:prefLabel "Combinations and arrangements"@en .
 
 :Probability a skos:Concept ;
   skos:inScheme :IS203concepts ;
   :reqReading "PROBREQREADING" ;
-  :backgroundReading "PROBBACKGREADING" ;    
   skos:prefLabel "Probability"@en .
 
 :Distributions a skos:Concept ;
   skos:inScheme :IS203concepts ;
   :reqReading "DISTREQREADING" ;
-  :backgroundReading "DISTBACKGREADING" ;    
   skos:prefLabel "Data and Probability Distributions"@en .
 
 :Sampling a skos:Concept ;
   skos:inScheme :IS203concepts ;
   :reqReading "SAMPLREQREADING" ;
-  :backgroundReading "SAMPLBACKGREADING" ;    
   skos:prefLabel "Sampling"@en .
 
 :Graphs1 a skos:Concept ;
   skos:inScheme :IS203concepts ;
   :reqReading "GRAPH1REQREADING" ;
-  :backgroundReading "GRAPH1BACKGREADING" ;    
   skos:prefLabel "Introduction to Graphs"@en .
 
 :Graphs2 a skos:Concept ;
   skos:inScheme :IS203concepts ;
   :reqReading "GRAPH2REQREADING" ;
-  :backgroundReading "GRAPH2BACKGREADING" ;    
   skos:prefLabel "Graphs problems and algorithms"@en .
 
 :Graphs3 a skos:Concept ;
   skos:inScheme :IS203concepts ;
   :reqReading "GRAPH3REQREADING" ;
-  :backgroundReading "GRAPH3BACKGREADING" ;    
   skos:prefLabel "Trees and maps"@en .
 
 :Coding1 a skos:Concept ;
   skos:inScheme :IS203concepts ;
   :reqReading "CODE1REQREADING" ;
-  :backgroundReading "CODE1BACKGREADING" ;    
   skos:prefLabel "Symbols and coding"@en .
 
 :Coding2 a skos:Concept ;
   skos:inScheme :IS203concepts ;
   :reqReading "CODE2REQREADING" ;
-  :backgroundReading "CODE2BACKGREADING" ;    
   skos:prefLabel "Strings and communication"@en .
 
 :Coding3 a skos:Concept ;
   skos:inScheme :IS203concepts ;
   :reqReading "CODE3REQREADING" ;
-  :backgroundReading "CODE3BACKGREADING" ;    
   skos:prefLabel "Number theory and privacy"@en .
 
 :Logic0 a skos:Concept ;
   skos:inScheme :IS203concepts ;
   :reqReading "LOGIC0REQREADING" ;
-  :backgroundReading "LOGIC0BACKGREADING" ;    
   skos:prefLabel "Propositional logic"@en .
 
 :Logic1 a skos:Concept ;
   skos:inScheme :IS203concepts ;
   :reqReading "LOGIC1REQREADING" ;
-  :backgroundReading "LOGIC1BACKGREADING" ;    
   skos:prefLabel "First order logic"@en .
 
 :Wrapup a skos:Concept ;
