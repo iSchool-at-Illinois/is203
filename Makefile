@@ -6,11 +6,11 @@
 M4PATH := ./md
 export M4PATH
 
-%.md : %.m4 %.cldr %.defs IS203.m4
-	m4 -DFORMATDEFS="wpformat.m4" -DMYDEFS="$*.m4" IS203.m4 > $*.md
+%.md : %.m4 %.cldr %.defs IS203.m4 
+	m4 -DFORMATDEFS="wpformat.m4" -DMOREDEFS="$*.defs" -DMYDEFS="$*.m4" IS203.m4 > $*.md
 
-%.docx : %.md %.bib
-	pandoc -s --bibliography=$*.bib -o $*.docx $*.md
+%.docx : %.md 
+	pandoc -s -o $*.docx $*.md
 
 %.bib : 
 	cat currentReadings.bib > $*.bib

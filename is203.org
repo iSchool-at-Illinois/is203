@@ -7,13 +7,16 @@
 ** Syllabus
 *** DONE Copy proposal text into MD files
     CLOSED: [2018-10-30 Tue 21:03]
-*** TODO Placeholder compiled version
+*** DONE Placeholder compiled version
+    CLOSED: [2019-07-21 Sun 18:37]
 *** TODO More detail on the assignments: integrate with boilerplate text, remove short assignment file
 *** DONE Topics file
     CLOSED: [2018-10-30 Tue 21:03]
 *** DONE Calendar file
-*** TODO Assignments file
-*** TODO Deadlines file
+*** DONE Assignments file
+    CLOSED: [2019-07-21 Sun 18:37]
+*** DONE Deadlines file
+    CLOSED: [2019-07-21 Sun 18:37]
 
 ** GenEd Requirements (written for a student audience)
 *** TODO Course rubric, number, title, and number of credits (if differential credit, also indicate)
@@ -35,7 +38,8 @@ For Gen Ed courses, consider keying to the specific Gen Ed
 requirement; for courses in the major, to major program goals. For
 more information about SLOs, see
 https://provost.illinois.edu/assessment/learning-outcomes-assessment/what-is-learning-outcomes-assessment/#categories).
-*** TODO A Course Calendar that includes course topics, daily readings and assignments, and due dates
+*** DONE A Course Calendar that includes course topics, daily readings and assignments, and due dates
+    CLOSED: [2019-07-21 Sun 18:40]
 *** TODO Course grading policies and breakdown of final grade 
 (e.g., Papers 40%, Exams 40%, Group Presentation 20%); a brief
 description of major assignments is also helpful to include

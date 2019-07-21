@@ -1,56 +1,56 @@
 :Math a skos:Concept ;
   skos:inScheme :IS203concepts ;
-  :reqReading "INTROREQREADING" ;
+  :reqReading "Syllabus" ;
   skos:prefLabel "Mathematics, information, and systems"@en .
 
 :Sets a skos:Concept ;
   skos:inScheme :IS203concepts ;
-  :reqReading "SETSREQREADING" ;
+  :reqReading "Wallis BGDM section 1.1 and chapter 2" ;
   skos:prefLabel "Sets"@en .
 
 :Relations a skos:Concept ;
   skos:inScheme :IS203concepts ;
-  :reqReading "RELATIONREQREADING" ;
+  :reqReading "Wallis BGDM chapter 4" ;
   skos:prefLabel "Relations and relational models"@en .
 
 :Counting a skos:Concept ;
   skos:inScheme :IS203concepts ;
-  :reqReading "COUNTINGREQREADING" ;
+  :reqReading "Wallis BGDM chapter 5" ;
   skos:prefLabel "Combinations and arrangements"@en .
 
 :Probability a skos:Concept ;
   skos:inScheme :IS203concepts ;
-  :reqReading "PROBREQREADING" ;
+  :reqReading "Wallis BGDM chapter 6" ;
   skos:prefLabel "Probability"@en .
 
 :Distributions a skos:Concept ;
   skos:inScheme :IS203concepts ;
-  :reqReading "DISTREQREADING" ;
+  :reqReading "Wallis MRW chapters 4 and 5" ;
   skos:prefLabel "Data and Probability Distributions"@en .
 
 :Sampling a skos:Concept ;
   skos:inScheme :IS203concepts ;
-  :reqReading "SAMPLREQREADING" ;
+  :reqReading "Wallis MRW chapter 5" ;
   skos:prefLabel "Sampling"@en .
 
 :Graphs1 a skos:Concept ;
   skos:inScheme :IS203concepts ;
-  :reqReading "GRAPH1REQREADING" ;
+  :reqReading "Wallis BGFM chapter 4" ;
   skos:prefLabel "Introduction to Graphs"@en .
 
 :Graphs2 a skos:Concept ;
   skos:inScheme :IS203concepts ;
-  :reqReading "GRAPH2REQREADING" ;
+  :reqReading "Wallis BGDM chapter 7" ;
   skos:prefLabel "Graphs problems and algorithms"@en .
 
 :Graphs3 a skos:Concept ;
   skos:inScheme :IS203concepts ;
-  :reqReading "GRAPH3REQREADING" ;
+  :reqReading "Wallis MRW chapter 8" ;
   skos:prefLabel "Trees and maps"@en .
 
 :Coding1 a skos:Concept ;
   skos:inScheme :IS203concepts ;
-  :reqReading "CODE1REQREADING" ;
+  :reqReading "Wallis MRW chapter 10 and Schneider v. 2.72" ;
   skos:prefLabel "Symbols and coding"@en .
 
 :Coding2 a skos:Concept ;
@@ -60,17 +60,17 @@
 
 :Coding3 a skos:Concept ;
   skos:inScheme :IS203concepts ;
-  :reqReading "CODE3REQREADING" ;
+  :reqReading "Wallis BGDM chapter 9" ;
   skos:prefLabel "Number theory and privacy"@en .
 
 :Logic0 a skos:Concept ;
   skos:inScheme :IS203concepts ;
-  :reqReading "LOGIC0REQREADING" ;
+  :reqReading "Magnus chapters 2 and 3" ;
   skos:prefLabel "Propositional logic"@en .
 
 :Logic1 a skos:Concept ;
   skos:inScheme :IS203concepts ;
-  :reqReading "LOGIC1REQREADING" ;
+  :reqReading "Magnus chapter 4" ;
   skos:prefLabel "First order logic"@en .
 
 :Wrapup a skos:Concept ;
