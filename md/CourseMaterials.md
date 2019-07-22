@@ -4,8 +4,9 @@
 Textbooks
 
 - Wallis, W. D. (2013). Mathematics in the real world. Birkhäuser.
-- van Benthem, J., van Ditmarsch, H., van Eijck, J., & Jaspars, J. (2014). Logic in Action. Amsterdam, NL: Logic in Action Open Course Project.
-
+- Wallis, W. D. (2012). A Beginner's Guide to Discrete Mathematics. Birkhäuser.
+- Wallis, W. D. (2012). A Beginner's Guide to Finite Mathematics. Birkhäuser.
+- Magnus, P. D. (2012). forallx: An Introduction to Formal Logic, Albany, NY: SUNY.
 
 
 
