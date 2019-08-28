@@ -3,6 +3,7 @@ define(COURSETITLE, Analytical Foundations for Information Problems)dnl
 define(ASSIGNMENTS, Assignments.md)dnl
 define(CALENDAR, spring19.cldr)dnl
 define(OVERVIEW, OverviewObjectives.md)dnl
+define(BROADGOALS, BroadGoals.md)dnl
 define(METADATA, syllabib.md)dnl
 define(A1DUE, Asgt. 1 Due Date)dnl
 define(A2DUE, Asgt. 2 Due Date)dnl

@@ -23,6 +23,7 @@ include(Integrity.md)
 include(InclusionAccessibility.md)
 include(ASSIGNMENTS)
 include(CALENDAR)
+include(BROADGOALS)
 include(SAFETY)
 
 FINALSEC

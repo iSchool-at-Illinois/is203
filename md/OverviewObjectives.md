@@ -1,90 +1,45 @@
 # Course Overview
 
-> *This section of the syllabus includes goals and objectives.  [This
-> document](https://provost.asu.edu/sites/default/files/page/1595/student-learning-outcomes.pdf)
-> from the Arizona State University Provost Office suggests some
-> distinctions between learning goals, objectives, and outcomes.*
+## Course Description
 
-The central themes of the course are:
-
-1. Theme number 1
-2. Theme number 2
-3. Theme number 3
+A survey of mathematical topics for students in information
+sciences. Provides an introduction to sets, relations, graphs,
+grammars, probability, and propositional and predicate logic. These
+topics relate to applications in information modeling, representation
+and expression.
 
 ## Learning Objectives
 
-> *Objectives state things the students and instructor will do.*
+1. Introduce mathematical structures and methods essential for understanding
+   information systems.
 
-1. Objective A
-2. Objective B
-3. Objective C
+2. Prepare students for further core and elective undergraduate
+   coursework in information sciences.
 
 ## Learning Outcomes
 
-> *Learning outcomes are much more detailed descriptions of the
-> competencies students will gain during the course.*
+Upon completion of this course, students will be able to:
 
-Outcome A
+1. Understand the definitions and uses of discrete and finite
+   mathematical structures that are employed in information systems
+   analysis, planning, and design.
 
-: In situation X, you will be able to *identify* some specific
-  property of a thing named in this sentence.
+2. Solve elemenary problems involving sets, relations, graphs, and
+   other structures.
 
-Outcome B
+3. Recognize and appreciate the roles played by mathematical objects in models
+   of application domains.
 
-: Faced with some common professional problem, you will be able to
-  *explain* the difference between two possible diagnoses.
+## Support of broader goals and objectives
 
-Outcome C
+This course advances the following broader learning objectives and goals:
 
-: After reading this sentence, you will be able to *recommend* a
-  different strong verb to cue with typographic emphasis.
-
-
-### Goals of the BS/IS
-
-- Equip students to be leaders in a knowledge society and innovators
-  in a knowledge economy
-- Educate students for known, emerging, and currently unforeseeable
-  careers in information sciences
-- Provide an interdisciplinary education where studies in fundamentals
-  of information sciences and in application areas are fully
-  integrated
-- Ensure that various upper-division elective pathways of the major
-  share a common core of information sciences knowledge
-- Provide a program with enough flexibility to facilitate transfers
-  into the major at the sophomore level, transfer across colleges at
-  the sophomore and junior level, and transfers from two-year colleges
-- Since information sciences is a rapidly developing field, offer a
-  flexible program that responds quickly to new needs and
-  opportunities, and to new findings and approaches in the information
-  sciences
-- Prepare interested students for graduate study in information
-  sciences and related fields
-
-Objectives of the BS/IS (based on objectives of the required courses)
-
-- Understand relationships among people, information, and technology
-- Understand the history, theory, philosophy and methodologies of the
-  field of information sciences
-- Apply various approaches to research in the information sciences,
-  including social science methods, data and text mining, digital
-  humanities, historical approaches, and others
-- Apply critical analytical skills to information issues
-- Understand fundamental mathematical and programming tools for
-  solving problems of information modeling, expression, and
+- Degree program: Understand fundamental mathematical and programming
+  tools for solving problems of information modeling, expression, and
   transformation
 
-iSchool Goal
+- School: Maintain global leadership in education for the information
+  professions
 
-This course meets the following goal:
+- Campus: Intellectual Reasoning and Knowledge
 
-- Maintain global leadership in education for the information professions
-
-University of Illinois Campus-Wide Learning Goals (Choose all that apply)
-This course meets the following goals):
-
-1. Intellectual Reasoning and Knowledge
-2. Creative Inquiry and Discovery
-3. Effective Leadership and Community Engagement
-4. Social Awareness and Cultural Understanding
-5. Global Consciousness
