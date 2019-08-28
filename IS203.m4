@@ -24,8 +24,8 @@ include(Integrity.md)
 include(InclusionAccessibility.md)
 include(CALENDAR)
 include(HelpfulResources.md)
-include(BROADGOALS)
 include(SAFETY)
+include(BROADGOALS)
 
 FINALSEC
 
