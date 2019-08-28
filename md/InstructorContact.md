@@ -1,5 +1,7 @@
-| Instructor: Instructor Name
-| Email: netID@illinois.edu
-| Office: Room NNN, LIS Building
-| Office Hour: Instructor Office Hours
-| Preferred Contact Method: Phone, email, face to face, etc.
+| Instructor: Dave Dubin
+| Email: ddubin@illinois.edu
+| Office: Room 330, Information Sciences Building
+| Office Hour: Thursday and Friday, 3:00-5:00 PM and by appointment.
+| Preferred contact method is face to face.
+
+
