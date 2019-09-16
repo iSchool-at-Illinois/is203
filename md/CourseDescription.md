@@ -8,4 +8,5 @@ and expression.
 
 ## Pre- and Co-requisites
 
-Prerequisite: MTH 124: Finite Mathematics
+None.
+
