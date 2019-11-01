@@ -1,4 +1,4 @@
-define(MYSECDATA, SectionData.md)dnl
+define(MYSECDATA, S19SectionData.md)dnl
 define(COURSETITLE, Analytical Foundations for Information Problems)dnl
 define(ASSIGNMENTS, Assignments.md)dnl
 define(POLICIES, Policies.md)dnl
