@@ -20,8 +20,8 @@ header-includes:
   objects in space like the printed strings of numeric digits that
   represent numbers.
 
-- The string '651' represents the number six hundred fifty one in base
-  10, but four hundred twenty five in base 8.
+- The numeral string '651' represents the number six hundred fifty one in base
+  10, but four hundred twenty five in base 8 (*BGDM* section 1.3).
 
 - Numbers are abstract things; we can't see or touch them. So how
   exactly do we learn anything about them?
@@ -42,7 +42,38 @@ header-includes:
   abstract objects like numbers. They treat sets (and numbers) as if
   they were real objects outside of space and time.
 
-# Objects in a pan balance
+# Knowledge from experience
+
+We obtain some kinds of knowledge (called '*a posteriori*,' meaning
+'from the later') by means of experience and using our five
+senses. For example, if we have two physical objects of roughly the
+same size, we could find out which is heavier by placing them on a pan
+balance.
 
 ![Balance](panBalance.jpg)\
+
+# Knowledge via reasoning methods
+
+- If we can't see, hear, feel, smell, or taste the things we want to
+  know about, we have to learn about them through reasoning (thinking
+  about them very carefully). Knowledge obtained this way is called
+  '*a priori*,' meaning 'from the earlier.'
+
+- The main worry that keeps mathematicians up at night is how we avoid
+  making mistakes, since our intuitions about mathematical objects and
+  their properties may not be correct.
+
+- The math we learn in primary school and high school consists almost
+  entirely of *effective methods*. These are procedures for solving a
+  particular type of math problem like multiplying two numbers
+  together or computing the area of a circle from the radius.
+
+- We're taught to trust the effective methods given to us by our math
+  teachers, but when do we ask how they're guaranteed to provide the
+  correct answers?
+
+
+# Proof in the reading
+
+ Proof that $\bar{9} = \overline{9} = 1$
 
