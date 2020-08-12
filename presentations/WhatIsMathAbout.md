@@ -14,7 +14,8 @@ header-includes:
   foundations of set theory and numbers."
 
 - We're not given a definition for 'number,' but we're told numbers
-  have properties (attributes or characteristics).
+  have properties (attributes or characteristics). For example, an
+  even number is divisible by two.
 
 - Those attributes don't include visibility, since numbers aren't
   objects in space like the printed strings of numeric digits that
@@ -41,6 +42,8 @@ header-includes:
   mathematicians believe (or at least act like they believe) sets are
   abstract objects like numbers. They treat sets (and numbers) as if
   they were real objects outside of space and time.
+
+- More on sets in the next presentation.
 
 # Knowledge from experience
 
@@ -72,6 +75,48 @@ balance.
   teachers, but when do we ask how they're guaranteed to provide the
   correct answers?
 
+# An effective method
+
+- If humans had one fewer finger on each hand, we'd probably be more familiar with base 8 numerals.
+- Instead of positions for ones, tens, hundreds, etc., we have
+  positions for ones, eights, sixty fours, and so on.
+- So any three digit string over the alphabet 0-7, can be converted from octal to decimal interpretation by:
+    1. multiplying the right most digit by 1,
+    2. multiplying the middle digit by 8,
+    3. multiplying the left digit by 64, and
+    4. adding those products together.
+
+- So 651 in base 8 is the same number as $1 + 40 + 384 = 425$ in base 10.
+
+# Proofs
+
+- A mathematical proof is a rigorous, formal argument for the truth of
+  a statement about mathematical objects or their properties.
+
+- Each step in a proof is an essential link in the chain, but
+  constructing a proof isn't a mechanical process like executing an
+  effective method.
+
+- Every proof is written for a particular audience. Some proofs for
+  students are also intended to serve as explanations, but the purpose
+  of a proof is to convince you that a statement is definitely true,
+  not to clarify your understanding of the concept.
+
+- The proof's audience determines the starting point (what is already
+  understod to be true) and the rules of inference that take you from
+  one step to another.
+
+# Theorem 1.1 in *BGDM*
+
+- The first proof that we find in Wallis's *Beginner's Guide to Discrete Math* is at the bottom of page 3.
+
+. . .
+
+**Theorem 1.1** $0.\bar{9} = 1$.
+
+**Proof.** Suppose $x = 0.\bar{9}$. Then $10x = 9.\bar{9} = 9 + 0.\bar{9} = 9 + x$. So $9x = 9$ and $x = 1$.
+
+. . .
 
 # Proof in the reading
 
