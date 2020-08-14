@@ -8,6 +8,12 @@ header-includes:
   - \usepackage{mathtools}
 ---
 
+# Rationale for this presentation
+
+1. In the first three pages of *BGDM*, our author starts relying on concepts and themes that are going to be important for us through the entire semester.
+2. But he dives right in without calling attention to these crucial ideas.
+3. I not only want you not to miss them, I also want you not to worry if some or all of these ideas are confusing at first.
+
 # Strange to ask what math is 'about'
 
 - Wallis, in section 1.1 of *BGDM*, says that all math "rests on the
@@ -36,7 +42,7 @@ header-includes:
 - We're told that a collection of tires or saucepans could constitute
   a set. Tires and saucepans are physical objects we can see and touch.
 
-- But the set that physical objects belong to is not a physical object.
+- But the set that some physical objects belong to is not itself a physical object.
 
 - Some philosophers consider sets to be ideas in our minds, but most
   mathematicians believe (or at least act like they believe) sets are
@@ -102,7 +108,7 @@ balance.
   of a proof is to convince you that a statement is definitely true,
   not to clarify your understanding of the concept.
 
-- The proof's audience determines the starting point (what is already
+- The proof's audience informs the starting point (what is already
   understod to be true) and the rules of inference that take you from
   one step to another.
 
@@ -118,7 +124,44 @@ balance.
 
 . . .
 
-# Proof in the reading
+Three most important things about this proof:
 
- Proof that $\bar{9} = \overline{9} = 1$
+1. Theorem 1.1 is counterintuitive;
+2. This proof uses algebra Wallis thinks you've already learned;
+3. It's a proof, not an explanation.
 
+# Spelling out the proof
+
+- William Byers in his book, *How Mathematicians Think*, gives this same proof step by step.
+- You'll also find this on the [Wikipedia page](https://en.wikipedia.org/wiki/0.999...) for $0.\bar{9}$.
+
+1. Suppose $x = 0.\bar{9}$
+2. $10x = 9.\bar{9}$ (multiplying by 10)
+3. $10x = 9 + 0.\bar{9}$ (split off the integer part)
+4. $10x = 9 + x$ (by the definition of $x$)
+5. $9x = 9$ (subtract x)
+6. $x = 1$ (divide by 9)
+
+# Significance for information professionals
+
+- You probably won't construct many (or any) mathematical proofs in your professional life.
+- But I want to get you started on becoming an informed consumer of mathematical certainties (and uncertainties).
+- Some ways of solving information problems with computers don't scale: they're too expensive.
+- But some scalable solutions have wide applicability, and better programmers than you have already coded them.
+- It can also be very profitable to know when a *general solution* to your problem is too expensive or impossible.
+
+# Significance for information professionals
+
+- Mapping these proven methods on to your professional applications calls for *abstraction*, which is all about distinguishing the *general* issues, patterns, and principles that are important to the problem at hand from those that are incidental.
+- We don't always seek the most general solution to an information problem, since it may not be affordable. But we absolutely have to recognize the differences between general and special cases.
+
+# So what's math about?
+
+1. Abstract objects (like numbers and sets), their properties and relationships;
+2. Knowledge of those things obtained by certain methods of reasoning;
+3. Ways in which their regularities govern things in the physical universe that we experience with our senses; 
+4. Concern for certainty, and the danger that our intuitions may not be correct.
+
+. . .
+
+Key concepts from this presentation: abstraction, abstract object, *a priori* knowledge, effective method, mathematical proof, mistaken intuition.
