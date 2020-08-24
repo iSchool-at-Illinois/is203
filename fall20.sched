@@ -1,0 +1,18 @@
+:Week1  :date "August 25 and 27";    dcterms:subject :Math .
+:Week2  :date "September 1 and 3";   dcterms:subject :Sets .
+:Week3  :date "September 8 and 10";  dcterms:subject :Logic0 .
+:Week4  :date "September 15 and 17";   dcterms:subject :Relations .
+:Week5  :date "September 22 and 24"; dcterms:subject :Logic1 .
+:Week6  :date "September 29 and October 1"; dcterms:subject :Counting .
+:Week7  :date "October 6 and 8"; dcterms:subject :Probability .
+:Week8  :date "October 13 and 15";      dcterms:subject :Distributions .
+:Week9  :date "October 20 and 22";    dcterms:subject :Graphs1 .
+:Week10 :date "October 27 and 29";    dcterms:subject :Graphs2 . 
+:Week11 :date "November 3 and 5"; dcterms:subject :Graphs3 .
+:Week12 :date "November 10 and 12";      dcterms:subject :Matrices . 
+:Week13 :date "November 17 and 19";   dcterms:subject :Coding1 .    
+:Week14 :date "Thanksgiving break: November 24 and 26" .  
+:Week15 :date "December 8 and Reading Day";    dcterms:subject :Wrapup .
+:Week16 :date "Finals week" .
+
+
