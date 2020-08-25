@@ -1,0 +1,33 @@
+:Q1D1 a :Deadline ;
+  rdfs:label "in class"@en ;
+  :date "September 10" ;    
+  :during :Week3 .
+
+:Q2D1 a :Deadline ;
+  rdfs:label "in class"@en ;
+  :date "September 24" ;    
+  :during :Week5 .
+
+:Q3D1 a :Deadline ;
+  rdfs:label "in class"@en ;
+  :date "October 8" ;    
+  :during :Week7 .
+
+:Q4D1 a :Deadline ;
+  rdfs:label "in class"@en ;
+  :date "October 22" ;    
+  :during :Week9 .
+
+:Q5D1 a :Deadline ;
+  rdfs:label "in class"@en ;
+  :date "November 5" ;    
+  :during :Week11 .
+
+:Q6D1 a :Deadline ;
+  rdfs:label "in class"@en ;
+  :date "November 19" ;    
+  :during :Week13 .
+
+
+
+

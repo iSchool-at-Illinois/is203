@@ -1,8 +1,9 @@
 # Assignments and Evaluation
 
-- Homework: 12 problem sets (36%)
-- Seven quizzes completed in class (49%)
-- Final exam (15%)
+- Homework assignments completed individually (30%)
+- Quizzes completed in class (48%)
+- Analysis reports prepared in small groups (15%)
+- Instructor assessment of participation and attendance (7%)
 
 ### Incomplete grades
 

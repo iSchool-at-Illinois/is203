@@ -1,0 +1,142 @@
+
+
+:SetsHwk a :Assignment ;
+  rdfs:label "Problem set: Sets"@en ;
+  :moodleURL hwk:MOODLESETSHWK ;
+  :sylSecId "Homework" ;
+  :dueDate "SETSDUE" ;  
+  :hasDeadline :HDsets .
+
+:Logic0Hwk a :Assignment ;
+  rdfs:label "Problem set: Propositional Logic"@en ;
+  :moodleURL hwk:MOODLELOG0HWK ;
+  :sylSecId "Homework" ;
+  :dueDate "LOGIC0DUE" ;  
+  :hasDeadline :HDlogic0 .
+
+:RelationsHwk a :Assignment ;
+  rdfs:label "Problem set: Relations"@en ;
+  :moodleURL hwk:MOODLERELAHWK ;
+  :sylSecId "Homework" ;
+  :dueDate "RELATIONSDUE" ;  
+  :hasDeadline :HDrelations .
+
+:Logic1Hwk a :Assignment ;
+  rdfs:label "Problem set: Predicate Logic"@en ;
+  :moodleURL hwk:MOODLELOG1HWK ;
+  :sylSecId "Homework" ;
+  :dueDate "LOGIC1DUE" ;  
+  :hasDeadline :HDlogic1 .
+
+:CountingHwk a :Assignment ;
+  rdfs:label "Problem set: Combinatorics"@en ;
+  :moodleURL hwk:MOODLECOMBHWK ;
+  :sylSecId "Homework" ;
+  :dueDate "COUNTINGDUE" ;  
+  :hasDeadline :HDcounting .
+
+:ProbHwk a :Assignment ;
+  rdfs:label "Problem set: Probability"@en ;
+  :moodleURL hwk:MOODLEPROBHWK ;
+  :sylSecId "Homework" ;
+  :dueDate "PROBDUE" ;  
+  :hasDeadline :HDprob .
+
+:DistHwk a :Assignment ;
+  rdfs:label "Problem set: Distributions"@en ;
+  :moodleURL hwk:MOODLEDISTHWK ;
+  :sylSecId "Homework" ;
+  :dueDate "DISTDUE" ;
+  :hasDeadline :HDdist .
+
+:Graph1Hwk a :Assignment ;
+  rdfs:label "Problem set: Graphs, part 1"@en ;
+  :moodleURL hwk:MOODLEGRPH1HWK ;
+  :sylSecId "Homework" ;
+  :dueDate "GRAPH1DUE" ;
+  :hasDeadline :HDgraph1 .
+
+:Graph2Hwk a :Assignment ;
+  rdfs:label "Problem set: Graphs, part 2"@en ;
+  :moodleURL hwk:MOODLEGRPH2HWK ;
+  :sylSecId "Homework" ;
+  :dueDate "GRAPH2DUE" ;  
+  :hasDeadline :HDgraph2 .
+
+:MatrixHwk a :Assignment ;
+  rdfs:label "Problem set: Matrices"@en ;
+  :moodleURL hwk:MOODLEMATRIXHWK ;
+  :sylSecId "Homework" ;
+  :dueDate "MATRIXDUE" ;
+  :hasDeadline :HDmatrix .
+
+:Code1Hwk a :Assignment ;
+  rdfs:label "Problem set: Symbols and codes, part 1"@en ;
+  :moodleURL hwk:MOODLECODE1HWK ;
+  :sylSecId "Homework" ;
+  :dueDate "CODE1DUE" ;  
+  :hasDeadline :HDcode1 .
+
+:Code2Hwk a :Assignment ;
+  rdfs:label "Problem set: Symbols and codes, part 2"@en ;
+  :moodleURL hwk:MOODLECODE2HWK ;
+  :sylSecId "Homework" ;
+  :dueDate "CODE2DUE" ;  
+  :hasDeadline :HDcode2 .
+
+:Quiz1 a :Assignment ;
+  rdfs:label "Quiz 1"@en ;
+  :moodleURL hwk:MOODLEQUIZ1 ;
+  :sylSecId "Quizzes" ;
+  :dueDate "Q1DATE" ;  
+  :hasDeadline :Q1D1 .
+
+:Quiz2 a :Assignment ;
+  rdfs:label "Quiz 2"@en ;
+  :moodleURL hwk:MOODLEQUIZ2 ;
+  :sylSecId "Quizzes" ;
+  :dueDate "Q2DATE" ;  
+  :hasDeadline :Q2D1 .
+
+:Quiz3 a :Assignment ;
+  rdfs:label "Quiz 3"@en ;
+  :moodleURL hwk:MOODLEQUIZ3 ;
+  :sylSecId "Quizzes" ;
+  :dueDate "Q3DATE" ;  
+  :hasDeadline :Q3D1 .
+
+:Quiz4 a :Assignment ;
+  rdfs:label "Quiz 4"@en ;
+  :moodleURL hwk:MOODLEQUIZ4 ;
+  :sylSecId "Quizzes" ;
+  :dueDate "Q4DATE" ;  
+  :hasDeadline :Q4D1 .
+
+:Quiz5 a :Assignment ;
+  rdfs:label "Quiz 5"@en ;
+  :moodleURL hwk:MOODLEQUIZ5 ;
+  :sylSecId "Quizzes" ;
+  :dueDate "Q5DATE" ;  
+  :hasDeadline :Q5D1 .
+
+:Quiz6 a :Assignment ;
+  rdfs:label "Quiz 6"@en ;
+  :moodleURL hwk:MOODLEQUIZ6 ;
+  :sylSecId "Quizzes" ;
+  :dueDate "Q6DATE" ;  
+  :hasDeadline :Q6D1 .
+
+:Quiz7 a :Assignment ;
+  rdfs:label "Quiz 7"@en ;
+  :moodleURL hwk:MOODLEQUIZ7 ;
+  :sylSecId "Quizzes" ;
+  :dueDate "Q7DATE" ;  
+  :hasDeadline :Q7D1 .
+
+:FinalExam a :Assignment ;
+  rdfs:label "Final Exam"@en ;
+  :moodleURL hwk:MOODLEFINALEXAM ;
+  :sylSecId "Exam" ;
+  :dueDate "FINALEXAMDATE" ;  
+  :hasDeadline :FXD1 .
+

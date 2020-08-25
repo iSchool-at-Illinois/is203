@@ -18,6 +18,12 @@
   :reqReading "Wallis BGDM chapter 5" ;
   skos:prefLabel "Combinations and arrangements"@en .
 
+:Matrices a skos:Concept ;
+  skos:inScheme :IS203concepts ;
+  :reqReading "Wallis BGFM chapter 5" ;
+  skos:prefLabel "Matrices and vectors"@en .
+
+
 :Probability a skos:Concept ;
   skos:inScheme :IS203concepts ;
   :reqReading "Wallis BGDM chapter 6" ;
@@ -50,7 +56,7 @@
 
 :Coding1 a skos:Concept ;
   skos:inScheme :IS203concepts ;
-  :reqReading "Wallis MRW chapter 10 and Schneider v. 2.72" ;
+  :reqReading "Wallis MRW chapter 10" ;
   skos:prefLabel "Symbols and coding"@en .
 
 :Coding2 a skos:Concept ;

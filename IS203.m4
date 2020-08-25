@@ -23,8 +23,6 @@ include(POLICIES)
 include(Integrity.md)
 include(InclusionAccessibility.md)
 include(CALENDAR)
-include(HelpfulResources.md)
-include(SAFETY)
 include(BROADGOALS)
 
 FINALSEC
