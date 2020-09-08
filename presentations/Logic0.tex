@@ -1,0 +1,570 @@
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  ignorenonframetext,
+]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph:
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\let\@@magyar@captionfix\relax
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Propositional Logic},
+  pdfauthor={Dave Dubin},
+  pdfborder={0 0 0},
+  breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\newif\ifbibliography
+\usepackage{longtable,booktabs}
+\usepackage{caption}
+% These lines are needed to make table captions work with longtable:
+\makeatletter
+\def\fnum@table{\tablename~\thetable}
+\makeatother
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-2}
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{syllogism}
+\usepackage{mathtools}
+
+\title{Propositional Logic}
+\author{Dave Dubin}
+\date{Fall Semester, 2020}
+
+\begin{document}
+\frame{\titlepage}
+
+\begin{frame}{Reasoning and representation}
+\protect\hypertarget{reasoning-and-representation}{}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  With this topic we'll give some attention to logical reasoning and
+  inference.
+\item
+  The same rules that govern valid argumentation also enable information
+  systems to answer interesting questions.
+\item
+  Logic is also a means to describe a \emph{domain} (some part of the
+  world we're interested in).
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Differences in notation}
+\protect\hypertarget{differences-in-notation}{}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Both our authors explain how to construct logical expressions.
+\item
+  Magnus uses `\&' for `and' while Wallis uses \(\wedge\). I'll use
+  \(\wedge\).
+\item
+  Wallis uses `\textasciitilde{}' for `not' while Magnus uses \(\neg\).
+  I'll use \(\neg\).
+\item
+  Wallis uses lower case letters to represent propositions, while Magnus
+  uses lower case. We'll use lower case letters.
+\item
+  Wallis only uses parentheses to disambiguate the scope of an operator.
+\item
+  Magnus insists on WFF rules that call for parentheses even where
+  there's no ambiguity.
+\item
+  We will follow Magnus's example and add parentheses according to the
+  WFF rules.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Differences in vocabulary}
+\protect\hypertarget{differences-in-vocabulary}{}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Magnus says his capital letters represent `sentences'
+\item
+  Wallis says a proposition is `a statement that has a truth value.'
+\item
+  I say that propositions are language independent bearers of truth
+  values.
+\item
+  Think of them as the information content of simple declarative
+  sentences.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Different sentence, same proposition}
+\protect\hypertarget{different-sentence-same-proposition}{}
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  ``This table is made of wood.''
+\item
+  ``This is a wooden table.''
+\item
+  ``Ĉi tiu tablo estas el ligno.''
+\item
+  ``Jen ligna tablo.''
+\item
+  ``Dieser Tisch ist aus Holz.''
+\item
+  ``Dies ist ein Holztisch.''
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Propositions, statements, sentences, and truth values}
+\protect\hypertarget{propositions-statements-sentences-and-truth-values}{}
+
+\begin{itemize}[<+->]
+\item
+  There are two truth values: \textbf{true} and \textbf{false}.
+\item
+  Propositions are the bearers of truth values: the kinds of things that
+  can be true or false.
+\item
+  States of affairs are arrangements of reality that make propositions
+  true or false.
+\item
+  We will model states of affairs using sets of proposition letters.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Propositional logic}
+\protect\hypertarget{propositional-logic}{}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  We represent propositions with lower case letters (typically \(p, q,\)
+  and \(r\)).
+\item
+  A set of proposition letters generates a set of states of affairs:
+  ways the world might be.
+\item
+  \(n\) proposition letters generate \(2^n\) states of affairs.
+\item
+  \(\{pqr,pq\overline{r},p\overline{q}r,p\overline{qr},\overline{p}qr,\overline{p}q\overline{r},\overline{pq}r,\overline{pqr}\}\)
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Logical Operators}
+\protect\hypertarget{logical-operators}{}
+
+\begin{longtable}[]{@{}lcr@{}}
+\toprule
+Symbol & In natural language & Technical name\tabularnewline
+\midrule
+\endhead
+\(\neg\) & not & negation\tabularnewline
+\(\wedge\) & and & conjunction\tabularnewline
+\(\vee\) & or & disjunction\tabularnewline
+\(\rightarrow\) & if \ldots{} then & implication\tabularnewline
+\(\leftrightarrow\) & if and only if & equivalence\tabularnewline
+\bottomrule
+\end{longtable}
+
+\end{frame}
+
+\begin{frame}{Logical Expressions}
+\protect\hypertarget{logical-expressions}{}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  A sentence constructed from proposition letters and operators is true
+  or false in each state of affairs.
+\item
+  Consider, for example: \((({\neg}p \vee q) \rightarrow r)\)
+\item
+  The sentence is mapped to a truth value via the following tables
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Truth tables for the operators}
+\protect\hypertarget{truth-tables-for-the-operators}{}
+
+\begin{longtable}[]{@{}cc@{}}
+\toprule
+\(\varphi\) & \(\neg\varphi\)\tabularnewline
+\midrule
+\endhead
+0 & 1\tabularnewline
+1 & 0\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{longtable}[]{@{}cccccc@{}}
+\toprule
+\(\varphi\) & \(\psi\) & \(\varphi \wedge \psi\) & \(\varphi \vee \psi\)
+& \(\varphi \rightarrow \psi\) &
+\(\varphi \leftrightarrow \psi\)\tabularnewline
+\midrule
+\endhead
+0 & 0 & 0 & 0 & 1 & 1\tabularnewline
+0 & 1 & 0 & 1 & 1 & 0\tabularnewline
+1 & 0 & 0 & 1 & 0 & 0\tabularnewline
+1 & 1 & 1 & 1 & 1 & 1\tabularnewline
+\bottomrule
+\end{longtable}
+
+\end{frame}
+
+\begin{frame}{From natural language to propositional logic}
+\protect\hypertarget{from-natural-language-to-propositional-logic}{}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  ``I will only go to school if I get a cookie now.''
+\item
+  Compare with ``I will go to school if I get a cookie''
+\item
+  The latter is cookie implies school, but the former is school implies
+  cookie.
+\item
+  You want \((s \rightarrow c)\)
+\item
+  Gloss: s = ``I will go to school'' and c = ``I get a cookie.''
+\item
+  John and Mary are running
+\item
+  \((j \wedge m)\)
+\item
+  A foreign national is entitled to social security if he has legal
+  employment or if he has had such less than three years ago, unless he
+  is currently also employed abroad.
+\item
+  \((((e \vee l) \wedge {\neg}a) \rightarrow s)\)
+\item
+  \(e =\) ``A foreign national has legal employment.''
+\item
+  \(l =\) ``He has had legal employment less than three years ago.''
+\item
+  \(a =\) ``He is currently employed abroad.''
+\item
+  \(s =\) ``He is entitled to social security.''
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Drawing truth tables for expressions}
+\protect\hypertarget{drawing-truth-tables-for-expressions}{}
+
+\begin{tabular}{@{ }c@{ }@{ }c@{ }@{ }c | c@{}@{}c@{}@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{}c@{}@{ }c@{ }@{ }c@{ }@{}c@{ }}
+p & q & r & ( & ( & $\neg$ & p & $\vee$ & q & ) & $\rightarrow$ & r & )\\
+\hline 
+1 & 1 & 1 &  &  & 0 & \textcolor{red}{1} & 1 & \textcolor{red}{1} &  & 1 & \textcolor{red}{1} & \\
+1 & 1 & 0 &  &  & 0 & \textcolor{red}{1} & 1 & \textcolor{red}{1} &  & 0 & \textcolor{red}{0} & \\
+1 & 0 & 1 &  &  & 0 & \textcolor{red}{1} & 0 & \textcolor{red}{0} &  & 1 & \textcolor{red}{1} & \\
+1 & 0 & 0 &  &  & 0 & \textcolor{red}{1} & 0 & \textcolor{red}{0} &  & 1 & \textcolor{red}{0} & \\
+0 & 1 & 1 &  &  & 1 & \textcolor{red}{0} & 1 & \textcolor{red}{1} &  & 1 & \textcolor{red}{1} & \\
+0 & 1 & 0 &  &  & 1 & \textcolor{red}{0} & 1 & \textcolor{red}{1} &  & 0 & \textcolor{red}{0} & \\
+0 & 0 & 1 &  &  & 1 & \textcolor{red}{0} & 1 & \textcolor{red}{0} &  & 1 & \textcolor{red}{1} & \\
+0 & 0 & 0 &  &  & 1 & \textcolor{red}{0} & 1 & \textcolor{red}{0} &  & 0 & \textcolor{red}{0} & \\
+\end{tabular}
+
+\end{frame}
+
+\begin{frame}{Drawing truth tables for expressions}
+\protect\hypertarget{drawing-truth-tables-for-expressions-1}{}
+
+\begin{tabular}{@{ }c@{ }@{ }c@{ }@{ }c | c@{}@{}c@{}@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{}c@{}@{ }c@{ }@{ }c@{ }@{}c@{ }}
+p & q & r & ( & ( & $\neg$ & p & $\vee$ & q & ) & $\rightarrow$ & r & )\\
+\hline 
+1 & 1 & 1 &  &  & \textcolor{red}{0} & \textcolor{green}{1} & 1 & 1 &  & 1 & 1 & \\
+1 & 1 & 0 &  &  & \textcolor{red}{0} & \textcolor{green}{1} & 1 & 1 &  & 0 & 0 & \\
+1 & 0 & 1 &  &  & \textcolor{red}{0} & \textcolor{green}{1} & 0 & 0 &  & 1 & 1 & \\
+1 & 0 & 0 &  &  & \textcolor{red}{0} & \textcolor{green}{1} & 0 & 0 &  & 1 & 0 & \\
+0 & 1 & 1 &  &  & \textcolor{red}{1} & \textcolor{green}{0} & 1 & 1 &  & 1 & 1 & \\
+0 & 1 & 0 &  &  & \textcolor{red}{1} & \textcolor{green}{0} & 1 & 1 &  & 0 & 0 & \\
+0 & 0 & 1 &  &  & \textcolor{red}{1} & \textcolor{green}{0} & 1 & 0 &  & 1 & 1 & \\
+0 & 0 & 0 &  &  & \textcolor{red}{1} & \textcolor{green}{0} & 1 & 0 &  & 0 & 0 & \\
+\end{tabular}
+
+\end{frame}
+
+\begin{frame}{Drawing truth tables for expressions}
+\protect\hypertarget{drawing-truth-tables-for-expressions-2}{}
+
+\begin{tabular}{@{ }c@{ }@{ }c@{ }@{ }c | c@{}@{}c@{}@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{}c@{}@{ }c@{ }@{ }c@{ }@{}c@{ }}
+p & q & r & ( & ( & $\neg$ & p & $\vee$ & q & ) & $\rightarrow$ & r & )\\
+\hline 
+1 & 1 & 1 &  &  & \textcolor{green}{0} & 1 & \textcolor{red}{1} & \textcolor{green}{1} &  & 1 & 1 & \\
+1 & 1 & 0 &  &  & \textcolor{green}{0} & 1 & \textcolor{red}{1} & \textcolor{green}{1} &  & 0 & 0 & \\
+1 & 0 & 1 &  &  & \textcolor{green}{0} & 1 & \textcolor{red}{0} & \textcolor{green}{0} &  & 1 & 1 & \\
+1 & 0 & 0 &  &  & \textcolor{green}{0} & 1 & \textcolor{red}{0} & \textcolor{green}{0} &  & 1 & 0 & \\
+0 & 1 & 1 &  &  & \textcolor{green}{1} & 0 & \textcolor{red}{1} & \textcolor{green}{1} &  & 1 & 1 & \\
+0 & 1 & 0 &  &  & \textcolor{green}{1} & 0 & \textcolor{red}{1} & \textcolor{green}{1} &  & 0 & 0 & \\
+0 & 0 & 1 &  &  & \textcolor{green}{1} & 0 & \textcolor{red}{1} & \textcolor{green}{0} &  & 1 & 1 & \\
+0 & 0 & 0 &  &  & \textcolor{green}{1} & 0 & \textcolor{red}{1} & \textcolor{green}{0} &  & 0 & 0 & \\
+\end{tabular}
+
+\end{frame}
+
+\begin{frame}{Drawing truth tables for expressions}
+\protect\hypertarget{drawing-truth-tables-for-expressions-3}{}
+
+\begin{tabular}{@{ }c@{ }@{ }c@{ }@{ }c | c@{}@{}c@{}@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{}c@{}@{ }c@{ }@{ }c@{ }@{}c@{ }}
+p & q & r & ( & ( & $\neg$ & p & $\vee$ & q & ) & $\rightarrow$ & r & )\\
+\hline 
+1 & 1 & 1 &  &  & 0 & 1 & \textcolor{green}{1} & 1 &  & \textcolor{red}{1} & \textcolor{green}{1} & \\
+1 & 1 & 0 &  &  & 0 & 1 & \textcolor{green}{1} & 1 &  & \textcolor{red}{0} & \textcolor{green}{0} & \\
+1 & 0 & 1 &  &  & 0 & 1 & \textcolor{green}{0} & 0 &  & \textcolor{red}{1} & \textcolor{green}{1} & \\
+1 & 0 & 0 &  &  & 0 & 1 & \textcolor{green}{0} & 0 &  & \textcolor{red}{1} & \textcolor{green}{0} & \\
+0 & 1 & 1 &  &  & 1 & 0 & \textcolor{green}{1} & 1 &  & \textcolor{red}{1} & \textcolor{green}{1} & \\
+0 & 1 & 0 &  &  & 1 & 0 & \textcolor{green}{1} & 1 &  & \textcolor{red}{0} & \textcolor{green}{0} & \\
+0 & 0 & 1 &  &  & 1 & 0 & \textcolor{green}{1} & 0 &  & \textcolor{red}{1} & \textcolor{green}{1} & \\
+0 & 0 & 0 &  &  & 1 & 0 & \textcolor{green}{1} & 0 &  & \textcolor{red}{0} & \textcolor{green}{0} & \\
+\end{tabular}
+
+\end{frame}
+
+\begin{frame}{Grammar of propositional logic}
+\protect\hypertarget{grammar-of-propositional-logic}{}
+
+Let \(P\) be a set of proposition letters and let \(p \in P\).
+
+The following expression defines the recursive grammar for a logical
+expression \(\varphi\) in
+\href{https://en.wikipedia.org/wiki/Backus\%E2\%80\%93Naur_Form}{Backus--Naur
+Form}:
+
+\(\varphi \Coloneqq p|\neg\varphi|(\varphi \wedge \varphi)|(\varphi \vee \varphi)|(\varphi \rightarrow \varphi)|(\varphi \leftrightarrow \varphi)\)
+
+\end{frame}
+
+\begin{frame}{Syntactically conforming expressions}
+\protect\hypertarget{syntactically-conforming-expressions}{}
+
+Let \(P = \{o,q,r,s\}\)
+
+Examples of grammatically conforming expressions include:
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  \(r\)
+\item
+  \({\neg}q\)
+\item
+  \((s \leftrightarrow o)\)
+\item
+  \(({\neg}(s \leftrightarrow \neg\neg{\neg}o) \rightarrow (q \wedge q))\)
+\end{itemize}
+
+Grammatically \emph{incorrect} expressions would include:
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  \(\neg\vee p\)
+\item
+  \(\vee ) p \neg\)
+\item
+  \({\neg}p \vee q \rightarrow r\)
+\end{itemize}
+
+How many correct expressions are consistent with the last one?
+
+\end{frame}
+
+\begin{frame}{Syntactic ambiguity}
+\protect\hypertarget{syntactic-ambiguity}{}
+
+These conforming expressions are all consistent with
+\({\neg}p \vee q \rightarrow r\)
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  \((({\neg}p \vee q) \rightarrow r)\)
+\item
+  \(({\neg}(p \vee q) \rightarrow r)\)
+\item
+  \({\neg}((p \vee q) \rightarrow r)\)
+\item
+  \(({\neg}p \vee (q \rightarrow r))\)
+\item
+  \({\neg}(p \vee (q \rightarrow r))\)
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Well-formed formulas}
+\protect\hypertarget{well-formed-formulas}{}
+
+Which of the following are formulas in propositional logic?
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  \(p \rightarrow {\neg}q\)
+\item
+  \({\neg}{\neg} \wedge q \vee p\)
+\item
+  \(p{\neg}q\)
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Logical truth and logical falsity.}
+\protect\hypertarget{logical-truth-and-logical-falsity.}{}
+
+\begin{itemize}[<+->]
+\item
+  A statement \(\varphi\) is logically true if it is true in every state
+  of affairs generated by its propositional variables.
+\item
+  A statement \(\varphi\) is logically false if it is false in every
+  state of affairs generated by its propositional variables.
+\item
+  If a statement \(\varphi\) is neither logically true or logically
+  false then it is contingent.
+\item
+  Examples:
+
+  \begin{enumerate}[<+->]
+  \tightlist
+  \item
+    \((q \vee {\neg}q)\) is logically true.
+  \item
+    \((q \wedge {\neg}q)\) is logically false.
+  \end{enumerate}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Consistency}
+\protect\hypertarget{consistency}{}
+
+\begin{itemize}[<+->]
+\item
+  A set of propositional logic statements is consistent if at least one
+  state of affairs satisfies every statement in the set.
+\item
+  A set of propositional logic statements is inconsistent if no state of
+  affairs satisfies every statement in the set.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Inference and validity}
+\protect\hypertarget{inference-and-validity}{}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  A conclusion is \emph{valid} with respect to a set of premises if the
+  conclusion is true in every sitation where the premises are true.
+\item
+  One can validly infer a conclusion \(\varphi\) from a set of premises
+  \(P\) if the negation of \(\varphi\) is inconsistent with the set of
+  statements \(P\).
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Computation and expressive power}
+\protect\hypertarget{computation-and-expressive-power}{}
+
+\begin{enumerate}[<+->]
+\tightlist
+\item
+  Computing a truth value for a formula takes linear time.
+\item
+  Computing a truth table for validity takes exponential time.
+\item
+  The problem of testing for validity in propositional logic is
+  decidable: there exists a mechanical method that computes the answer,
+  at least in principle.
+\end{enumerate}
+
+\end{frame}
+
+\end{document}

@@ -43,4 +43,21 @@ header-includes:
       ii.  The intersection of $S$ and $T$ is $S$.
 
 
- 
+23) $A = \{\emptyset\}, B = \{A\}, C = \{\emptyset, A\}, D = \{\emptyset, A, C\}, S = \{\emptyset, A, B, C, D\}$ Show that:
+
+      i.    $\{x| x \in S$ and $x \subseteq D\} = S$;
+          - $\{x| x \in S\} = S$ is true by definition, so it suffices to show that every element of $S$ is a subset of $D$.
+	  - $\emptyset$ is a subset of $D$ because $\emptyset$ is a subset of every set.
+	  - $A$ is a subset of $D$ because $A = \{\emptyset\}$ and $\emptyset \in D$.
+	  - $B$ is a subset of $D$ because $B = \{A\}$ and $A \in D$.
+	  - $C$ is a subset of $D$ because $C = \{\emptyset, A\}$ and both $\emptyset$ and $A$ are elements of $D$.
+	  - $D$ is a subset of $D$ because every set is a subset of itself.
+      ii.   $\{x| x \in S$ and $x \in D\} = D$;
+          - $\{x| x \in S$ and $x \in D\}$ is by definition $S \cap D$.
+	  - But every element of $D$ is also an element of $S$, so $D \subseteq S$.
+	  - And for any sets $V$ and $T$, if $T \subseteq V$ then $T \cap V = T$.
+
+
+In exercises 31-42, numbers 31, 32, 34, 37, 39, and 42 are true. The others are false.
+
+
