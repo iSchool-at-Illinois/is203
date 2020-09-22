@@ -142,7 +142,7 @@
   assignments---just like variables in algebraic expressions.\\
 \item
   Capital letters represent properties that an individual might have,
-  classes they might belong to, or relations they might stand in. Think
+  classes they might belong to, or relationships they might stand in. Think
   of them like relations in a relational database.
 \item
   Finally we have two new \textit{quantifiers}: the symbol \(\forall\)
@@ -232,74 +232,6 @@ propositional logic grammar:
   interpretation, every child was riding some pony, but no particular
   pony was necessarily ridden by every child.
 \end{itemize}
-
-\end{frame}
-
-\begin{frame}[fragile]{Translating to logical form}
-\protect\hypertarget{translating-to-logical-form}{}
-
-\begin{itemize}[<+->]
-\item
-  Many English sentences admit more than one logical form. We say they
-  are either syntactically or semantically \emph{ambiguous}.
-\item
-  A syntactically ambiguous sentence has more than one parse, such as
-  ``I saw the  man on the hill with the telescope.''
-\item
-  A semantically ambiguous parse has more than one interpretation,
-  such as this argument from LeBlanc and Wisdom:
-\begin{itemize}
- \item All fathers are parents;
- \item All artists are dreamers;
- \item Therefore, all fathers of artists are parents of artists and
-   fathers of dreamers.
-\end{itemize}
-\item
-  Define the unary predicates \(Ax\) and \(Dx\) as ``x is an artist''
-  and ``x is a dreamer,'' respectively.
-\item
-  Define the binary predicates \(Fxy\) and \(Pxy\) as ``x is the father
-  of y'' and ``x is the parent of y,'' respectively.
-\end{itemize}
-
-\end{frame}
-
-\begin{frame}{Translating to logical form}
-\protect\hypertarget{translating-to-logical-form-1}{}
-
-It seems natural to translate the argument this way:
-
-\begin{itemize}[<+->]
-\tightlist
-\item
-  All fathers are parents: \({\forall}xy (Fxy \rightarrow Pxy)\)
-\item
-  All artists are dreamers: \({\forall}x (Ax \rightarrow Dx)\)
-\item
-  Therefore, all fathers of artists are parents of artists and fathers
-  of dreamers:
-  \({\forall}wx ((Fxw \wedge Aw) \rightarrow {\exists}yz ((Pxy \wedge Ay) \wedge (Fxz \wedge Dz)))\)
-\end{itemize}
-
-\pause
-
-That translation is not only natural, it also gives us a valid argument.
-But on reflection, a strict reading of the first premise gives us this
-translation:
-
-\pause
-
-\begin{itemize}[<+->]
-\tightlist
-\item
-  All fathers are parents:
-  \({\forall}xy (Fxy \rightarrow {\exists}z Pxz)\)
-\end{itemize}
-
-\pause
-
-In other words, "All fathers of anyone are parents of \emph{someone}.
-And the resulting argument is \emph{not} valid.
 
 \end{frame}
 
