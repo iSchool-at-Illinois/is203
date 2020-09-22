@@ -1,12 +1,12 @@
 ---
 title: Predicate Logic
 author: Dave Dubin
-date: February 6, 2017
+date: September, 2020
 header-includes:
   - \usepackage[utf8]{inputenc}
   - \usepackage{amssymb}
   - \usepackage{mathtools}
-  - \usecolortheme{lily}  
+  - \usecolortheme{beaver}  
 ---
 
 # Last week: propositional logic
@@ -19,19 +19,7 @@ header-includes:
   rules of a formal grammar to make logical expressions. For example, the
   expression $(r \wedge {\neg}o)$ would mean "Romeo loves Juliet, but Othello
   does not love Iago."
-  
-# Semantics of propositional logic
-
-- Logic expressions also have truth values, but only with respect to particular
-  truth value assignments to the proposition letters.
-- We model states of affairs two ways: first as a group of proposition letters with
-  truth values assigned to them. For example, there are four possible states of affairs
-  for the two propositions $r$ and $o$.
-- The second way of understanding states of affairs is as valuations: functions from
-  expressions to truth values. For example, there is only one of the four states of
-  affairs that maps the expression $(r \wedge {\neg}o)$ to \textit{true}. That is to
-  say, only one of those states of affairs models that expression.
-  
+    
 # Predicate logic expressions
 
 - Predicate logic (also called first order logic) uses the same parentheses and
@@ -60,6 +48,18 @@ header-includes:
 - ${\forall}x {\forall}y (Vx \rightarrow Lyx)$ means "everyone loves a lover."
 - ${\forall}x (Vx \leftrightarrow {\exists}z Lxz)$ means "a lover is someone who loves."
 
+
+# Formal grammar for first order logic
+
+The grammar for predicate logic has rules in common with our propositional logic grammar:
+
+- $\textbf{v} \Coloneqq x|y|z|\ldots$
+- $\textbf{c} \Coloneqq a|b|c|\ldots$
+- $\textbf{t} \Coloneqq \textbf{v}|\textbf{c}$
+- $\textbf{P} \Coloneqq P|Q|R|\ldots$
+- $\textbf{Atom} \Coloneqq \textbf{Pt}_{1}\ldots\textbf{t}_{n}$ where $n$ is the arity of \textbf{P}
+- $\varphi \Coloneqq \textbf{Atom}|\neg\varphi|(\varphi \wedge \varphi)|(\varphi \vee \varphi)|(\varphi \rightarrow \varphi)|(\varphi \leftrightarrow \varphi)|{\forall}\textbf{v} \varphi|{\exists}\textbf{v} \varphi$
+
 # Quantifiers have scope
 
 - The scope of a quantifier consists of the logical expression immediately following it. This means that one quantifier can be
@@ -80,10 +80,12 @@ header-includes:
   saw the man on the hill with the telescope."
 - A semantically ambiguous parse has more than one interpretation, even
   with the same grammatical parse. Consider this argument from LeBlanc and Wisdom:
+  
        - All fathers are parents;
        - All artists are dreamers;
        - Therefore, all fathers of artists are parents of artists and
          fathers of dreamers.
+
 - Define the unary predicates $Ax$ and $Dx$ as "x is an artist" and "x
   is a dreamer," respectively.
 - Define the binary predicates $Fxy$ and $Pxy$ as "x is the father of
@@ -119,27 +121,23 @@ argument is \emph{not} valid.
   when the premises are true.
 - As with translation, our common sense and domain knowledge can set
   us up for surprises. Consider (courtesy of Prof. Smullyan) :
-      - Everyone loves a lover;
-      - Romeo loves Juliet;
-      - Therefore, Othello loves Iago.
+
+       - Everyone loves a lover;
+       - Romeo loves Juliet;
+       - Therefore, Othello loves Iago.
 
 # Surprised?
 
 - Everyone loves a lover
+
       - ${\forall}x {\forall}y (Vx \rightarrow Lyx)$
       - ${\forall}x (Vx \leftrightarrow {\exists}z Lxz)$
+
 - Romeo loves Juliet
+
       - $Lrj$
+
 - Therefore, Othello loves Iago.
+
       - $Loi$
 
-# Formal grammar for first order logic
-
-From your reading for this week:
-
-- $\textbf{v} \Coloneqq x|y|z|\ldots$
-- $\textbf{c} \Coloneqq a|b|c|\ldots$
-- $\textbf{t} \Coloneqq \textbf{v}|\textbf{c}$
-- $\textbf{P} \Coloneqq P|Q|R|\ldots$
-- $\textbf{Atom} \Coloneqq \textbf{Pt}_{1}\ldots\textbf{t}_{n}$ where $n$ is the arity of \textbf{P}
-- $\varphi \Coloneqq \textbf{Atom}|\neg\varphi|(\varphi \wedge \varphi)|(\varphi \vee \varphi)|(\varphi \rightarrow \varphi)|(\varphi \leftrightarrow \varphi)|{\forall}\textbf{v} \varphi|{\exists}\textbf{v} \varphi$

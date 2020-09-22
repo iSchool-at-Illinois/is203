@@ -1,0 +1,349 @@
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  ignorenonframetext,
+]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph:
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usetheme[]{Boadilla}
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Predicate Logic},
+  pdfauthor={Dave Dubin},
+  pdfborder={0 0 0},
+  breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\newif\ifbibliography
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-2}
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usecolortheme{beaver}
+
+\title{Predicate Logic}
+\author{Dave Dubin}
+\date{September, 2020}
+
+\begin{document}
+\frame{\titlepage}
+
+\begin{frame}{Last week: propositional logic}
+\protect\hypertarget{last-week-propositional-logic}{}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  The propositional logic introduced last week used lower case letters
+  to represent propositions: things that could be true or false.
+\item
+  For example \(r\) might stand for the proposition ``Romeo loves
+  Juliet,'' and \(o\) might stand for ``Othello loves Iago.''
+\item
+  The proposition letters are joined by operators and parentheses
+  according to the rules of a formal grammar to make logical
+  expressions. For example, the expression \((r \wedge {\neg}o)\) would
+  mean ``Romeo loves Juliet, but Othello does not love Iago.''
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Predicate logic expressions}
+\protect\hypertarget{predicate-logic-expressions}{}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Predicate logic (also called first order logic) uses the same
+  parentheses and operators as propositional logic. But letters are used
+  in three different ways.
+\item
+  Lower case letters from the beginning of the Latin alphabet represent
+  specific individual things in the domain we're modeling. Think of them
+  like proper names.
+\item
+  Lower case letters from the end of the alphabet (like \(x\) and \(y\))
+  are variables that can denote different individuals under different
+  assignments---just like variables in algebraic expressions.\\
+\item
+  Capital letters represent properties that an individual might have,
+  classes they might belong to, or relations they might stand in. Think
+  of them like relations in a relational database.
+\item
+  Finally we have two new \textit{quantifiers}: the symbol \(\forall\)
+  is read ``for all'' and \(\exists\) is read ``there exists.''
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Examples of predicate logic expressions}
+\protect\hypertarget{examples-of-predicate-logic-expressions}{}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  Predicates take a particular number of arguments, and the order
+  matters. Let \(Lxy\) stand for the binary predicate ``x loves y,''
+  \(Vx\) stand for the unary predicate ``x is a lover,'' and the
+  propositional constants \(r, j, o, d, i\) stand for Romeo, Juliet,
+  Othello, Desdemona, and Iago, respectively.
+\item
+  \(Lrj\) means ``Romeo loves Juliet.''
+\item
+  \((Lrj \wedge {\neg}Loi)\) means ``Romeo loves Juliet, but Othello
+  doesn't love Iago.''
+\item
+  \({\forall}x Lxd\) means ``everyone loves Desdemona''
+\item
+  \({\neg\exists}xLix\) means ``Iago loves no one.''
+\item
+  \({\forall}x {\forall}y (Vx \rightarrow Lyx)\) means ``everyone loves
+  a lover.''
+\item
+  \({\forall}x (Vx \leftrightarrow {\exists}z Lxz)\) means ``a lover is
+  someone who loves.''
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Formal grammar for first order logic}
+\protect\hypertarget{formal-grammar-for-first-order-logic}{}
+
+The grammar for predicate logic has rules in common with our
+propositional logic grammar:
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  \(\textbf{v} \Coloneqq x|y|z|\ldots\)
+\item
+  \(\textbf{c} \Coloneqq a|b|c|\ldots\)
+\item
+  \(\textbf{t} \Coloneqq \textbf{v}|\textbf{c}\)
+\item
+  \(\textbf{P} \Coloneqq P|Q|R|\ldots\)
+\item
+  \(\textbf{Atom} \Coloneqq \textbf{Pt}_{1}\ldots\textbf{t}_{n}\) where
+  \(n\) is the arity of \textbf{P}
+\item
+  \(\varphi \Coloneqq \textbf{Atom}|\neg\varphi|(\varphi \wedge \varphi)|(\varphi \vee \varphi)|(\varphi \rightarrow \varphi)|(\varphi \leftrightarrow \varphi)|{\forall}\textbf{v} \varphi|{\exists}\textbf{v} \varphi\)
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Quantifiers have scope}
+\protect\hypertarget{quantifiers-have-scope}{}
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  The scope of a quantifier consists of the logical expression
+  immediately following it. This means that one quantifier can be within
+  the scope of another.
+\item
+  Define \(Cx\), \(Px\), and \(Rxy\) as meaning \(x\) is a child, \(x\)
+  is a pony, and \(x\) rode \(y\), respectively.
+\item
+  The ambiguous English sentence, ``Every child was riding a pony''
+  expresses two different propositions.
+\item
+  We can express the first in logical form as
+  \({\exists}x (Px \wedge {\forall}y (Cy \rightarrow Ryx))\). On this
+  interpretation, there is some particular pony (or ponies) that every
+  child rode.
+\item
+  We can express the second as
+  \({\forall}y (Cy \rightarrow {\exists}x (Px \wedge Ryx))\). On this
+  interpretation, every child was riding some pony, but no particular
+  pony was necessarily ridden by every child.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Translating to logical form}
+\protect\hypertarget{translating-to-logical-form}{}
+
+\begin{itemize}[<+->]
+\item
+  Many English sentences admit more than one logical form. We say they
+  are either syntactically or semantically \emph{ambiguous}.
+\item
+  A syntactically ambiguous sentence has more than one parse, such as
+  ``I saw the  man on the hill with the telescope.''
+\item
+  A semantically ambiguous parse has more than one interpretation,
+  such as this argument from LeBlanc and Wisdom:
+\begin{itemize}
+ \item All fathers are parents;
+ \item All artists are dreamers;
+ \item Therefore, all fathers of artists are parents of artists and
+   fathers of dreamers.
+\end{itemize}
+\item
+  Define the unary predicates \(Ax\) and \(Dx\) as ``x is an artist''
+  and ``x is a dreamer,'' respectively.
+\item
+  Define the binary predicates \(Fxy\) and \(Pxy\) as ``x is the father
+  of y'' and ``x is the parent of y,'' respectively.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Translating to logical form}
+\protect\hypertarget{translating-to-logical-form-1}{}
+
+It seems natural to translate the argument this way:
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  All fathers are parents: \({\forall}xy (Fxy \rightarrow Pxy)\)
+\item
+  All artists are dreamers: \({\forall}x (Ax \rightarrow Dx)\)
+\item
+  Therefore, all fathers of artists are parents of artists and fathers
+  of dreamers:
+  \({\forall}wx ((Fxw \wedge Aw) \rightarrow {\exists}yz ((Pxy \wedge Ay) \wedge (Fxz \wedge Dz)))\)
+\end{itemize}
+
+\pause
+
+That translation is not only natural, it also gives us a valid argument.
+But on reflection, a strict reading of the first premise gives us this
+translation:
+
+\pause
+
+\begin{itemize}[<+->]
+\tightlist
+\item
+  All fathers are parents:
+  \({\forall}xy (Fxy \rightarrow {\exists}z Pxz)\)
+\end{itemize}
+
+\pause
+
+In other words, "All fathers of anyone are parents of \emph{someone}.
+And the resulting argument is \emph{not} valid.
+
+\end{frame}
+
+\begin{frame}[fragile]{Inference and validity}
+\protect\hypertarget{inference-and-validity}{}
+
+\begin{itemize}[<+->]
+\item
+  Just as with propositional logic, a conclusion follows validly from
+  premises if it cannot be false when the premises are true.
+\item
+  As with translation, our common sense and domain knowledge can set us
+  up for surprises. Consider (courtesy of Prof.~Smullyan) :
+\begin{itemize}
+ \item Everyone loves a lover;
+ \item Romeo loves Juliet;
+ \item Therefore, Othello loves Iago.
+\end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Surprised?}
+\protect\hypertarget{surprised}{}
+
+\begin{itemize}[<+->]
+\item
+  Everyone loves a lover
+\begin{itemize}
+\item ${\forall}x {\forall}y (Vx \rightarrow Lyx)$
+\item ${\forall}x (Vx \leftrightarrow {\exists}z Lxz)$
+\end{itemize}
+\item
+  Romeo loves Juliet
+\begin{itemize}
+\item $Lrj$
+\end{itemize}
+\item
+  Therefore, Othello loves Iago.
+\begin{itemize}
+\item $Loi$
+\end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\end{document}
